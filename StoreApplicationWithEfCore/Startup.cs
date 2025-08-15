@@ -25,6 +25,7 @@ namespace StoreApplicationWithEfCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //regiatration
             services.AddTransient<IGetCustomerListService, GetCustomerListService>();
             services.AddTransient<IGetProductListService, GetProductListService>();
             services.AddControllersWithViews();
